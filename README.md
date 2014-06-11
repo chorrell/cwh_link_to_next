@@ -1,7 +1,7 @@
 cwh_link_to_next
 ================
 
-cwh_link_to_next is a Textpattern plugin that provides a  replacement tag for `<txp:link_to_next />` that includes a new _format_ attribute which provides the ability to set the link format as a `link` tag suitable for placing in the `head` of any individual article page on your site. You can do this by setting the _format_ attribute like so:
+cwh_link_to_next is a [Textpattern](http://textpattern.com) plugin that provides a  replacement tag for `<txp:link_to_next />` that includes a new _format_ attribute which provides the ability to set the link format as a `link` tag suitable for placing in the `head` of any individual article page on your site. You can do this by setting the _format_ attribute like so:
 
 ```
 <txp:cwh_link_to_next title="Next" format="link" />
