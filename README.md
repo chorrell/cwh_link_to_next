@@ -36,3 +36,24 @@ If you do specify a _link_ value for the _format_ attribute while used as a cont
 This tag also shares all of the same attributes as `<txp:link_to_next />`. For a complete list of applicable attributes, see [this Textbook entry](http://textbook.textpattern.net/wiki/index.php?title=Txp:link_to_next).
 
 For a further explanation of the benefits of using `link` tags for your site's navigation, please see [Day 9: Providing additional navigation aids](http://diveintoaccessibility.org/day_9_providing_additional_navigation_aids.html) from Mark Pilgrim's [Dive Into Accessibility](http://diveintoaccessibility.org/).
+
+Installation
+------------
+
+Download `cwh_link_to_next.txt` from the
+[latest release](https://github.com/chorrell/cwh_link_to_next/releases/latest),
+then paste its contents into the _Install plugin_ box under Admin → Plugins in
+Textpattern.
+
+Releases
+--------
+
+Releases are automated with
+[release-please](https://github.com/googleapis/release-please). PR titles use
+[conventional commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`,
+`docs:`, etc.; add `!` for breaking changes). After a releasable merge,
+release-please opens a release PR that bumps the version and updates
+`CHANGELOG.md`. Merging it tags the release, and the workflow attaches
+`cwh_link_to_next.txt` and a zip to the GitHub release.
+
+To build the installer yourself, run `php cwh_link_to_next.php > cwh_link_to_next.txt`.
