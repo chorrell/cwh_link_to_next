@@ -1,7 +1,7 @@
 <?php
 $plugin['name'] = 'cwh_link_to_next';
 
-$plugin['version'] = '0.1.0'; // x-release-please-version
+$plugin['version'] = '0.1.1'; // x-release-please-version
 $plugin['author'] = 'Christopher Horrell';
 $plugin['author_uri'] = 'http://horrell.ca/';
 $plugin['description'] = 'A replacement tag for <txp:link_to_next /> that includes the ability to set the output format as a <link> tag.';
