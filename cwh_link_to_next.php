@@ -6,7 +6,7 @@ $plugin['author'] = 'Christopher Horrell';
 $plugin['author_uri'] = 'http://horrell.ca/';
 $plugin['description'] = 'A replacement tag for <txp:link_to_next /> that includes the ability to set the output format as a <link> tag.';
 
-$plugin['type'] = 0; 
+$plugin['type'] = 0;
 
 
 @include_once('zem_tpl.php');
@@ -24,7 +24,7 @@ which will produce something similar to:
 
 Note that when used as a single tag without the _format_ attribute specified:
 
-@<txp:cwh_link_to_next />@ 
+@<txp:cwh_link_to_next />@
 
 it will produce a plain text link much in the same way as @<txp:link_to_next />@:
 
@@ -81,16 +81,16 @@ function cwh_link_to_next($atts, $thing)
             		($next_title != $thing ? ' title="'.$next_title.'"' : '').' />';
         	}
 
-            
+
             elseif ($thing)
             {
                 $thing = parse($thing);
-                
+
                 return '<a rel="next" href="'.$url.'"'.
     			    ($next_title != $thing ? ' title="'.$next_title.'"' : '').
     				'>'.$thing.'</a>';
             }
-	
+
             return $url;
 	}
      return ($showalways) ? parse($thing) : '';
